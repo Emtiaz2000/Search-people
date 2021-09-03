@@ -1,0 +1,125 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background: radial-gradient(circle, rgba(174,175,238,1) 0%, rgba(142,15,184,1) 92%);
+}
+
+.container{
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+.container h1{
+    text-align:center;
+    color:#fff;
+    font-family: 'Mulish', sans-serif;
+
+}
+
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:560px;;
+    background:#fff;
+    width:30%;
+    border-radius: 15px;
+    padding:5px;
+    overflow: hidden;
+    margin-top:1rem;
+}
+.search-section h3{
+    color:rgb(85, 85, 84);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding:5px;
+}
+#search{
+    height:33px;
+    width:80%;
+    margin:10px auto;
+    display: block;
+    padding:0px 10px;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #000;
+}
+.people{
+    width:99%;
+    height:80%;
+    margin:1rem auto;
+    border-radius: 10px;
+    padding-top:5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.singlePerson{
+    width:100%;
+    height:100px;
+    position:relative;
+    margin-top:15px;
+}
+.people-left{
+    width:20%;
+    height:80%;
+    position:absolute;
+    top:0;
+    left:5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.people-left>img{
+    height:100%;
+    width:100%;
+    transform: scale(1);
+    image-rendering: auto;
+}
+
+.people-right{
+    position:absolute;
+    height:100%;
+    width:70%;
+    top:0px;
+    right:0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Quicksand', sans-serif;
+}
+.isFound{
+    display: none;
+}
+.isFound h4{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+/* scrollbar design */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #e6dde1;
+    padding:2px 0px;
+    border-radius: 15px;;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 15px;
+    transition: .2s ease;
+
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(146, 105, 105);
+  }
