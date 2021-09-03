@@ -123,3 +123,11 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(146, 105, 105);
   }
+
+
+/*media query*/
+  @media screen and (max-width: 600px) {
+    .wrapper{
+        width:60%;
+    }
+}
